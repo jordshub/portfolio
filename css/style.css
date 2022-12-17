@@ -25,12 +25,6 @@ a {
     color: #ffffff;
 }
 
-header {
-
-    margin: 0;
-    padding: 0;
-}
-
 body {
     background-color: rgb(47, 104, 158);
 }
@@ -69,15 +63,6 @@ h4 {
         "project2 project3"
         "project4 project5";
 }
-
-/* .project1area {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-items: center;
-    display: flex;
-    position: relative;
-} */
 
 #project1 {
     grid-area: project1;
