@@ -133,8 +133,6 @@ h4 {
     position: absolute;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.541);
-    max-width: fit-content;
-    height: fit-content;
     font-size: 25px;
     padding: 1%;
     border: #ffffff;
@@ -159,7 +157,6 @@ img {
 
 #project1 {
     grid-area: project1;
-
     color: white;
     font-size: 18px;
     margin-bottom: 2%;
@@ -298,6 +295,10 @@ footer p {
         font-family: var(--font-secondary);
         margin-bottom: -30px;
         margin-top: 100px
+    }
+
+    #grid-heading {
+        height: auto;
     }
 
 }
