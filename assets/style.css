@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-secondary: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    --font-main: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif
+}
+
+.intro1 {
+    display: flex;
+    flex-direction: row;
+    margin: -16px 3% 0.9% 2.5%;
+    font-family: var(--font-secondary);
+}
+
+.intro2 {
+    display: flex;
+    flex-direction: row;
+    margin: -18px 3% 0.9% 2.5%;
+    color: rgb(76, 0, 95);
+    font-family: var(--font-main);
+}
+
+.intro3 {
+    display: flex;
+    flex-direction: row;
+    margin: -18px 3% 0.9% 2.5%;
+    color: rgba(76, 0, 95, 0.7);
+    font-family: var(--font-main);
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+    justify-content: space-evenly;
+    margin: 0px 10% 0px 40%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: #ffffff;
+}
+
+a {
+    color: #ffffff;
+}
+
+body {
+    background-image: linear-gradient(rgba(118, 24, 155, 0.5) 50%,
+            rgba(109, 20, 168, 0.9) 100%);
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 50px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+.about {
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    margin: 15px 3% 35px 2.5%;
+    font-family: var(--font-main)
+}
+
+#grid {
+    margin: 0px 5%;
+    display: grid;
+    height: 68vh;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "project1 project1"
+        "project2 project3"
+}
+
+.main-grid-area {
+    display: grid;
+    position: relative;
+}
+
+#grid-heading {
+    display: grid;
+    position: absolute;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.541);
+    max-width: fit-content;
+    height: fit-content;
+    font-size: 25px;
+    padding: 1%;
+    border: #ffffff;
+    border-radius: 15px;
+    font-family: var(--font-main)
+}
+
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+#project1 {
+    grid-area: project1;
+
+    color: white;
+    font-size: 18px;
+    margin-bottom: 2%;
+    border-radius: 25px;
+    min-height: 315px;
+}
+
+#project2 {
+    grid-area: project2;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-right: 2%;
+    color: white;
+    font-size: 18px;
+    border-radius: 25px;
+}
+
+#project3 {
+    grid-area: project3;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-left: 2%;
+    color: white;
+    font-size: 18px;
+    border-radius: 25px;
+}
+
+#project4 {
+    grid-area: project4;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    color: white;
+    font-size: 18px;
+    border: 5px solid #ffffff;
+}
+
+#project5 {
+    grid-area: project5;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    color: white;
+    font-size: 18px;
+    border: 5px solid #ffffff;
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    align-content: center;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+
+
+@media screen and (max-width: 576px) {
+    #project2 {
+        margin-bottom: 1%;
+        margin-right: auto;
+    }
+
+    #project3 {
+        margin-top: 1%;
+        margin-left: auto;
+    }
+
+    #grid {
+        margin: 0px 5%;
+        display: grid;
+        height: 75vh;
+        width: 80vh;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "project1"
+            "project1"
+            "project2"
+            "project3"
+    }
+
+}
