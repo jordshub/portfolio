@@ -7,43 +7,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link href="assets/style.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/a648589fc6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <nav>
             <ul>
-                <a href="#project1">Project1</a>
-                <a href="#project2">Project2</a>
-                <a href="#project3">Project3</a>
+                <a href="#about-me">About me</a>
+                <a href="#my-work">My work</a>
+                <a href="#contact-me">Contact me</a>
             </ul>
         </nav>
-        <h1 class="intro1">Hi, my name is</h1>
+        <h1 class="intro1">hi, my name is</h1>
         <h2 class="intro2">Jordan Fry</h2>
-        <h3 class="intro3">Welcome to my Portfolio</h3>
+        <h2 class="intro3">Welcome to my Portfolio</h2>
     </header>
-    <section class="about">
-        <p>I am currently participating in a front end web development bootcamp with Trilogy skills (EDx).</p>
+    <section class="about-me">
+        <h4 id="about-heading">about me</h4>
+        <br>
+        <img id="avatar" src="assets/images/generic-avatar.png">
+        <p>I am currently participating in a Front-End Web Development
+            bootcamp with edX.</p>
     </section>
+    <div id="my-work">
+        <h4 id="my-work-heading">my work</h4>
+    </div>
     <section id="grid">
-        <div id="project1" class="">
-            <a href="google.com">
+        <div id="project1">
+            <a href="https://jordshub.github.io/CSS-Cheat-Sheet/">
                 <h4 id="grid-heading">CSS Cheat Sheet</h4>
                 <img src="assets/images/CSS-Cheat-Sheet.png" />
             </a>
         </div>
         <div id="project2" class="main-grid-area">
-            <a href="google.com">
+            <a href="https://jordshub.github.io/prework-study-guide/">
                 <h4 id="grid-heading">Prework Study Guide</h4>
                 <img src="assets/images/prework-study-guide2.png" />
             </a>
         </div>
         <div id="project3" class="main-grid-area">
-            <a href="google.com">
+            <a href="https://jordshub.github.io/landing-mini-project1/">
                 <h4 id="grid-heading">Group Project - Landing Page</h4>
                 <img src="assets/images/mini-group-project1-landing2.png" />
             </a>
         </div>
+    </section>
+    <section>
+        <div id="contact-me">
+            <h4 id="contact-heading">contact me</h4>
+        </div>
+        <p id="contact-me"><i class="fa-solid fa-envelope"></i>jordshub@gmail.com
+        </p>
     </section>
     <footer>
         <h5>Created by Jordan</h5>
